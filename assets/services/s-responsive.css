@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) {
+	body{
+		overflow-x: hidden;
+	}
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hero-area{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/s-hero.png');
+        background-size: cover;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        height: 80vh;
+        mask-repeat: no-repeat;
+        color: #fff;
+    }
+    .hero-area .hero-cntent{
+		position: relative;
+		margin-top: 270px;
+		color: #fff;
+		line-height: 20.4px;
+		
+	}
+    .hero-area h1{
+        height: 124px;
+        width: 453.33929443359375px;
+        left: 106px;
+        top: 164px;
+        border-radius: nullpx;
+        color: #fff!important;
+
+    }
+    .s-hero{
+        display: none;
+    }
+    .auf-das{
+        margin-left: 25px;
+    }
+    .review{
+		background: #F8F8F8;
+	}
+	.client-review h2{
+	left: 35.28%;
+	right: 35.28%;
+	top: 17.9%;
+	bottom: 71.43%;
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 130%;
+	color: #1F2A5A;
+	
+	}
+	.review-area{
+		align-items: flex-end;
+		gap: 15px;
+		width: 400px;
+		height: 240px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 16px 2px rgba(233, 233, 233, 0.6);
+		margin-left: 65px;
+		padding-left: 5px;
+	}
+	.review-area p{
+		margin-left: 85px;
+		font-size: 10px;
+	}
+    .cards{
+		display: none;
+	}
+    .f-list{
+        display: none;
+    }
+}
