@@ -1,5 +1,5 @@
 /* /mobile- */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 625px) {
   .hero-area img {
     background-size: cover;
     margin: 0 auto;
@@ -162,10 +162,8 @@
     position: fixed;
     z-index: 9;
     left: 0;
-    right: 0;
     top: 100px;
-    bottom: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
     flex-direction: column;
     justify-content: space-evenly;
@@ -504,13 +502,13 @@
   .box {
     width: 50%;
     height: 160px;
-	position: relative;
+    position: relative;
   }
   .box:nth-child(odd) {
     flex-direction: row-reverse;
-	text-align: right;
+    text-align: right;
   }
-  
+
   .box:nth-child(even) {
     margin-left: calc(50% - 40px);
   }
